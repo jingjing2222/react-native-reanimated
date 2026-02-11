@@ -189,7 +189,7 @@ RCT_EXPORT_BLOCKING_SYNCHRONOUS_METHOD(installTurboModule)
 {
   const auto global = rnRuntime.global();
   const auto uiRuntime = 
-      rnRuntime, global.getProperty(rnRuntime, "__UI_WORKLET_RUNTIME").asObject(rnRuntime).getNativeState<WorkletRuntimeHolder>(rnRuntime)->runtime_;
+      rnRuntime, global.getProperty(rnRuntime, "__UI_WORKLET_RUNTIME_HOLDER").asObject(rnRuntime).getNativeState<WorkletRuntimeHolder>(rnRuntime)->runtime_;
   return uiRuntime;
 }
 
